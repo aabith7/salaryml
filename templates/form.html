@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form">
+        <form action="{{ url_for('model_prediction')}}" method="post">
+            <form>
+                <label for="experience">Experience:</label>
+                <input type="text" id="experience" name="Experience" placeholder="Enter your experience" required="required">
+            
+                <label for="education_leve'">Education:</label>
+                <input type="text" id="education_level" name="Education_level" placeholder="Enter your education_level" required="required">
+            
+                <label for="age">Level:</label>
+                <input type="text" id="age" name="age" placeholder="Enter your age" required="required">
+            
+                 <button type="submit">Submit</button>
+            </form>
+            
+
+            <h2>the prediced salayer is {{results}}</h2>
+
+        </form>
+    </div>
+</body>
+</html>
